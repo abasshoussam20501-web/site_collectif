@@ -1,0 +1,115 @@
+body {
+    background-image: url("C:/Users/houssam/Desktop/IMAGES/image1.png");
+
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: orange;
+  color: white;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact-btn {
+  background: white;
+  color: orange;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ANIMATED TITLE */
+.hero h2 {
+  font-size: 60px;
+  animation: fadeColor 4s infinite ease-in-out;
+}
+
+@keyframes fadeColor {
+  0% { color: orange; opacity: 1; }
+  50% { color: gold; opacity: 0.6; }
+  100% { color: orange; opacity: 1; }
+}
+
+/* BUTTON */
+button {
+  padding: 10px 15px;
+  border: none;
+  background: orange;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* BRANDS */
+.brands {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* PHONES */
+.phones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* CARD */
+.phone {
+  background: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.phone:hover {
+  transform: scale(1.05);
+}
+
+/* EMOJI STYLE */
+.phone-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+/* CART */
+.cart-box {
+  position: fixed;
+  right: 0;
+  top: 70px;
+  width: 250px;
+  background: white;
+  padding: 10px;
+  border-left: 3px solid orange;
+}
+
+.hidden {
+  display: none;
+}
