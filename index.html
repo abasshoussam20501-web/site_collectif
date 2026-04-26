@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>INSFP SHOP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>INSFP SHOP</h1>
+
+  <div class="header-right">
+    <a href="contact.html" class="contact-btn">Allez vers Contact</a>
+    <div class="cart">🛒 <span id="cart-count">0</span></div>
+  </div>
+</header>
+
+<section class="hero">
+  <h2>Welcome to INSFP SHOP</h2>
+  <button onclick="showBrands()">📱 Categories</button>
+</section>
+
+<!-- BRANDS -->
+<div id="brands" class="brands hidden">
+  <button onclick="showPhones('samsung')">Samsung</button>
+  <button onclick="showPhones('oppo')">Oppo</button>
+  <button onclick="showPhones('xiaomi')">Xiaomi</button>
+  <button onclick="showPhones('apple')">Apple</button>
+</div>
+
+<!-- PHONES -->
+<div id="phones" class="phones"></div>
+
+<!-- CART -->
+<div id="cart-box" class="cart-box hidden">
+  <h3>Your Cart</h3>
+  <ul id="cart-items"></ul>
+  <button onclick="commander()">Commander</button>
+</div>
+
+<script src="javas.js"></script>
+</body>
+</html>
