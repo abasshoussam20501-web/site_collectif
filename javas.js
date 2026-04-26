@@ -1,4 +1,3 @@
-
 let cart = [];
 
 function showBrands() {
@@ -40,7 +39,7 @@ function addToCart(name) {
   document.getElementById("cart-count").innerText = cart.length;
 
   let list = document.getElementById("cart-items");
-  list.innerHTML += <li>${name}</li>;
+  list.innerHTML += `<li>${name}</li>`;
 
   document.getElementById("cart-box").classList.remove("hidden");
 }
@@ -50,3 +49,4 @@ function commander() {
   cart = [];
   document.getElementById("cart-items").innerHTML = "";
   document.getElementById("cart-count").innerText = 0;
+}
